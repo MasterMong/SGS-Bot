@@ -1,0 +1,5 @@
+pyautogui
+pandas
+clipboard
+pygetwindow
+keyboard
