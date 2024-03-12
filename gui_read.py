@@ -5,6 +5,7 @@ import clipboard
 from time import sleep
 import pyautogui
 
+
 class GuiApp:
     def __init__(self, master=None):
         # build ui
@@ -103,9 +104,9 @@ class GuiApp:
             self.label_cooldown.config(text=f'{left} seconds')
             sleep(1)
 
-        if(paste and len(lines) > 0):
+        if (paste and len(lines) > 0):
             for line in lines:
-                if (line != '' and line != line_header):
+                if (line != ''):
                     cells = line.split('\t')
                     for cell in cells:
                         print(f'filling {cell}')
@@ -125,6 +126,7 @@ class GuiApp:
         print('calc')
         self.fn_clipboard(paste=True)
         pass
+
 
 if __name__ == "__main__":
     app = GuiApp()
